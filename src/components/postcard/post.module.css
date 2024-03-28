@@ -1,0 +1,7 @@
+.postimage{
+    width:100%;
+    height:280px;
+}
+.postimage img{
+    position: relative !important;
+}

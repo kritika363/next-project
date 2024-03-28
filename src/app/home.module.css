@@ -1,0 +1,20 @@
+.banner{
+    background-color: #10ade4;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.bannerContent{
+    align-self: center  ;
+}
+.btns button{
+    border-radius: 3px;
+    background: black;
+    color: #fff;
+    padding: 10px 23px;
+}
+.btns{
+    display: flex;
+    column-gap: 15px;
+    margin-top: 30px;
+}

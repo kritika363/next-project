@@ -1,0 +1,11 @@
+.headingInner{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.content{
+    width: 40%;
+    background-color: #10ade4;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 50px 0 50px auto;
+}

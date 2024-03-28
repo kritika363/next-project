@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.navbar a {
+  padding-inline: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  transition: all 0.3s linear;
+}
+
+.navbar a:hover{
+  color:teal;
+}
+a.logo {
+  background: #09B8CF;
+  background: linear-gradient(to top left,#5716f5 35%, #000000 43%, #5716f5 77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 27px;
+  letter-spacing: 4px;
+}
+.footer{
+  background: #000;
+}
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: #ffffff2e;
+  z-index: 9;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.imgContainer{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+.formControl {
+  width: 100%;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  padding: 6px 10px;
+  color: #000;
+}
+.formGroup{
+  margin-bottom: 15px;
+}
+.submit-btn{
+  background-color: #000 !important;
+    color: #fff;
+    padding: 12px 42px;
+    border-radius: 7px;
+}
+.container{
+  width:80%;
+  margin:0 auto;
+}
