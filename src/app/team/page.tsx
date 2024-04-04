@@ -1,11 +1,11 @@
 import React from "react";
 import MemberDetails from "../../components/uers/users";
-interface usr {
+interface User {
   id: number;
-  name: "string";
-  email: "string";
-  address: "string";
-  phone: "string";
+  name: string;
+  email: string;
+  address: string;
+  phone: string;
 }
 
 const getuser = async () => {
@@ -23,9 +23,9 @@ const teamMember = async () => {
       <div className="container">
         <h1 className="text-center">Our Team</h1>
         <div className=" grid grid-cols-3 gap-4">
-          {teams.map((teaam: usr) => {
-            <MemberDetails kv={teaam} />;
-          })}
+          {teams.map((team: User) => (
+            <MemberDetails userr={team} />
+          ))}
         </div>
       </div>
     </div>

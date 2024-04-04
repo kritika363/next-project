@@ -1,32 +1,28 @@
 import React from "react";
 import Link from "next/link";
 
-
-interface usr{
-    kv:{
-        id: number;
-        name: 'string';
-        email:'string';
-        address: 'string';
-        phone:'string'
-    }
-   
+interface usr {
+    userr: {
+    id: number;
+    name: string;
+    email: string;
+    address: string;
+    phone: string;
+  };
 }
 
-const memberDetails = (data:usr) => {
-    
+const memberDetails = (dta : usr) => {
   return (
-   
-      <div className="inner">
-        <h4>{data.kv.name}</h4>
-        <h5>
-          <Link href="mailto:{data.kv.email}">{data.kv.email}</Link>
-        </h5>
-        <h5>{data.kv.address}</h5>
-        <h5>
-          <Link href="tel:{data.kv.phone}">{data.kv.phone}</Link>
-        </h5>
-      </div>
+    <div className="inner">
+      <h4>{dta.userr.name}</h4>
+      <h5>
+        <Link href="mailto:{data.kv.email}">{dta.userr.email}</Link>
+      </h5>
+      <h5>address</h5>
+      <h5>
+        <Link href="tel:{data.kv.phone}">{dta.userr.phone}</Link>
+      </h5>
+    </div>
   );
 };
 

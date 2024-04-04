@@ -1,6 +1,7 @@
 .postimage{
     width:100%;
-    height:280px;
+    height:220px;
+    margin-bottom:15px;
 }
 .postimage img{
     position: relative !important;
