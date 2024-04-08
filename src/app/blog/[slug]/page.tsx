@@ -9,25 +9,24 @@ interface Post {
 }
 
 const getdata = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts/${slug}');
 
-  if (!res.ok) {
-    throw new Error("something went wrong");
-  }
+
   return res.json();
 };
 
-const singleBlog = () => {
+
+const singleBlog = async(dot:Post) => {
+  const inner = await getdata();
   return (
     <div className="pt-20 bg-sky-500 blog-inner">
       <div className="container mt-20 flex-row">
         <Image src="/building.jpg" alt="post" width={450} height={640}></Image>
         <div className="content-blog">
-          <h1>Bulding</h1>
+          <h1>{dot.title}</h1>
           <h6>20/03/02024</h6>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.{" "}
+           {dot.body}
           </p>
         </div>
       </div>
